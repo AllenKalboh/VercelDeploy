@@ -27,6 +27,7 @@ const Register = () => {
         });
         if (!message || message.trim() === "") {
             alert("maglagay ka nga raw ng message ngaaa");
+            setIsLoading(false)
             return; // Stop execution if message is empty
         }
         if (error) {
