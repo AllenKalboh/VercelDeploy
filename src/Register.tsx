@@ -26,9 +26,12 @@ const Register = () => {
             message: message
         });
         if (error) {
-            alert('Dili nag send ang imong messageji')
+            alert('dili nag send ang imong messiji :<')
+            setIsLoading(false)
         } else {
            setIsLoading(false)
+           alert('nag send ang imong messiji! ^_^')
+           
         }
 
     }
@@ -40,8 +43,7 @@ const Register = () => {
 
     return (
         <div>
-           
-            {isLoading && <p className='m-2 p-2'>Loading...</p>}
+        
             <h1 className='m-2 p-2 font-bold'>Say something to Allen</h1>
             <input
                 type="text"
@@ -53,9 +55,6 @@ const Register = () => {
 
             <button className='border-2 p-2 m-2 rounded-2xl w-30 hover:bg-amber-100 hover:cursor-pointer duration-300'
                 onClick={insertMessage}>
-
-
-
              {isLoading ? "Sending..." : "Submit"}
             </button>
 
