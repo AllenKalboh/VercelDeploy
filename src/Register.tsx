@@ -31,7 +31,7 @@ const Register = () => {
         } else {
            setIsLoading(false)
            alert('nag send ang imong messiji! ^_^')
-           
+           setMessage("")
         }
 
     }
