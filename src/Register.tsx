@@ -44,28 +44,29 @@ const Register = () => {
     return (
         <div>
         
-            <h1 className='m-2 p-2 font-bold'>Say something to Allen</h1>
+            <h1 className='p-4 font-bold text-white text-3xl'>Say something to Allen</h1>
+            <div className='flex flex-col justify-center items-center'>
             <input
                 type="text"
-                placeholder='loeee'
+                placeholder='type something...'
                 value={message ?? ""}
-                className='p-2 m-2 border-2 rounded-2xl'
+                className='p-2 m-4 text-white border-2 border-white rounded-2xl'
                 onChange={handleMessageChange}
                 required />
 
-            <button className='border-2 p-2 m-2 rounded-2xl w-30 hover:bg-amber-100 hover:cursor-pointer duration-300'
+            <button className='border-2 border-white text-white p-2 m-2 rounded-2xl w-30 hover:bg-white hover:cursor-pointer hover:text-[#384B70] duration-300'
                 onClick={insertMessage}>
              {isLoading ? "Sending..." : "Submit"}
             </button>
-
+            </div>
             {/* <p>
                 Name:    {name}
             </p> */}
             <div className='m-4 rounded-2xl'>
                 {/* <p className='m-2 p-2 break-words'>
                     Dear Allen, */}
-                    <p className=''>
-                       Message: {message}
+                    <p className='text-white break-words text-4xl'>
+                       Message: <p className='italic indent-8'> {message} </p>
                     </p>
                 {/* </p> */}
             </div>
