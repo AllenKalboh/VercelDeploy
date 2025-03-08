@@ -9,7 +9,7 @@ import { supabase } from './components/CreateClient'
 const Register = () => {
 
     // const [name, setName] = useState<string | null>(null)
-    const [message, setMessage] = useState<string | null>(null)
+    const [message, setMessage] = useState<string>()
     // const [user, setUser] = useState<User | null>(null)
     const [isLoading, setIsLoading] = useState<boolean>(false)
     // const handleNameChange = (e: any) => {
