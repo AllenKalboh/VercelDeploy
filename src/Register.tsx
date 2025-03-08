@@ -63,7 +63,7 @@ const Register = () => {
 
                 <button className='border-2 border-white text-white p-2 m-2 rounded-2xl w-30 hover:bg-white hover:cursor-pointer hover:text-[#384B70] duration-300'
                     onClick={insertMessage}>
-                    {isLoading ? "Sending..." : "Submit"}
+                    {isLoading ? "Sending..." : "Send"}
                 </button>
             </div>
             {/* <p>
