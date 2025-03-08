@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { supabases } from './components/CreateClient'
+import { supabase } from './components/CreateClient'
 
 const Register = () => {
 
