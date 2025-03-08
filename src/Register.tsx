@@ -1,16 +1,16 @@
 import { useState } from 'react'
 import { supabase } from './components/CreateClient'
 
-interface User{
-    name: string | null
-    message: string | null
-}
+// interface User{
+//     name: string | null
+//     message: string | null
+// }
 
 const Register = () => {
 
     const [name, setName] = useState<string | null>(null)
     const [message, setMessage] = useState<string | null>(null)
-    const [user, setUser] = useState<User | null>(null)
+    // const [user, setUser] = useState<User | null>(null)
 
     const handleNameChange = (e: any) => {
         setName(e.target.value)
@@ -27,9 +27,9 @@ const Register = () => {
         })
     }
 
-    const fetchMessage = async () =>{
-        await supabase.from('Yowser').select('*')
-    }
+    // const fetchMessage = async () =>{
+    //     await supabase.from('Yowser').select('*')
+    // }
 
 
     return (
