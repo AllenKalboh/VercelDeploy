@@ -1,20 +1,11 @@
-import { useState } from 'react'
-import { supabase } from './components/CreateClient'
-
-// interface User{
-//     name: string | null
-//     message: string | null
-// }
+import { useEffect, useState } from 'react'
+import { supabases } from './components/CreateClient'
 
 const Register = () => {
 
-    // const [name, setName] = useState<string | null>(null)
     const [message, setMessage] = useState<string | null>(null)
-    // const [user, setUser] = useState<User | null>(null)
     const [isLoading, setIsLoading] = useState<boolean>(false)
-    // const handleNameChange = (e: any) => {
-    //     setName(e.target.value)
-    // }
+
 
     const handleMessageChange = (e: any) => {
         setMessage(e.target.value)
@@ -40,11 +31,6 @@ const Register = () => {
         }
 
     }
-
-    // const fetchMessage = async () =>{
-    //     await supabase.from('Yowser').select('*')
-    // }
-
 
     return (
         <div>
@@ -72,9 +58,9 @@ const Register = () => {
             <div className='m-4 rounded-2xl'>
                 {/* <p className='m-2 p-2 break-words'>
                     Dear Allen, */}
-                <p className='text-white break-words text-4xl'>
+                <div className='text-white break-words text-4xl'>
                     Message: <p className='italic indent-8'> {message} </p>
-                </p>
+                </div>
                 {/* </p> */}
             </div>
 
