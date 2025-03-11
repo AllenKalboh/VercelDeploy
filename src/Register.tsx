@@ -17,16 +17,16 @@ const Register = () => {
             message: message
         });
         if (!message || message.trim() === "") {
-            alert("maglagay ka nga raw ng message ngaaa");
+            alert("maglagay ka raw nga ng message ngaaa");
             setIsLoading(false)
             return; // Stop execution if message is empty
         }
         if (error) {
-            alert('dili nag send ang imong messij nag iror haha')
+            alert('dili nag send nag iror haha')
             setIsLoading(false)
         } else {
             setIsLoading(false)
-            alert('nag send na ang imong messiji! ^_^')
+            alert('nag send na boi')
             setMessage("")
         }
 
