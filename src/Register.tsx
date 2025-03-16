@@ -59,7 +59,7 @@ const Register = () => {
                 {/* <p className='m-2 p-2 break-words'>
                     Dear Allen, */}
                 <div className='text-white break-words text-4xl'>
-                    Message: <p className='italic indent-8'> {message} </p>
+                    Messagej: <p className='italic indent-8'> {message} </p>
                 </div>
                 {/* </p> */}
             </div>
