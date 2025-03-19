@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { supabase } from './components/CreateClient'
+import { supabase } from './CreateClient'
 
-const Register = () => {
+const SendMessage = () => {
 
     const [message, setMessage] = useState<string | null>(null)
     const [name, setName] = useState<string>("")
@@ -41,7 +41,7 @@ const Register = () => {
     return (
         <div>
             <div className='flex justify-center items-center'>
-                <h1 className='mt-6 p-4 font-bold text-white text-3xl'>Say something to Allen</h1>
+                <h1 className='p-4 font-bold text-white text-3xl'>Say something to Allen</h1>
             </div>
             <div className='flex flex-col justify-center items-center'>
 
@@ -87,4 +87,4 @@ const Register = () => {
     )
 }
 
-export default Register
+export default SendMessage
