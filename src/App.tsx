@@ -40,11 +40,11 @@ const App = () => {
           <Route
             path="/dashboard"
             element={
-            <Wrapper>
-            <Dashboard />
-            </Wrapper>
+              <Wrapper>
+                <Dashboard />
+              </Wrapper>
             }
-            
+
           >
           </Route>
 

@@ -22,7 +22,7 @@ const Register = () => {
             setPassword("");
             return;
         } if (data) {
-            setMessage("User Account Created Check Your Supabase Authentication please :>");
+            alert("User Account Created!");
           
         }
         setIsLoading(false);
